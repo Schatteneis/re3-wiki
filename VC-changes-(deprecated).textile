@@ -1,0 +1,54 @@
+ID ranges
+map file formats
+paths
+cullzones removed
+occlusion
+streamed ifp
+streamed col
+bikes
+helis
+trains removed
+different ped hierarchy
+different timecycle
+different handling
+ped attractors
+ropes
+water creatures
+wind modifiers
+...
+
+Proposal for evolution strategy:
+```
+phase 1 (III with VC improvements): (DONE)
+  - implement new path system (DONE)
+    - remove treadables &c.
+  - ifdef BRIDGE (DONE)
+  - ifdef TRAINS (DONE)
+  - remove cullzones (DONE)
+  - put col files into cdimage (DONE)
+  - implement col store (DONE)
+
+phase 2 (VC map with everything else III): (DONE)
+  - create VC map cdimage (dff, txd, col) (DONE)
+  - replace map files with VC ones (also zones) (DONE)
+  - implement the slightly new file formats (DONE)
+  - move map sectors (ifdef for LCS) (DONE)
+
+phase 3:
+  - redefine model indices (DONE)
+
+phase 4 (cars): (DONE)
+  - replace car definitions with VC (DONE)
+  - handling.cfg (ignoring values, otherwise DONE)
+
+phase 5 (peds):
+  - replace ped definitions with VC (DONE)
+  - various data files too (DONE)
+  - implement new node hierarchy (DONE)
+  - remove separate head and hand code
+
+TODO:
+  audio
+  script
+  particles (probably not a huge issue)
+```
